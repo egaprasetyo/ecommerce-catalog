@@ -1,0 +1,282 @@
+/* Starter Template */
+:root {
+  --primary-blue: #002772;
+  --primary-purple: #720060;
+  --primary-purple-inactive: #a04092;
+  --bg-pink: #fde2ff;
+  --bg-blue: #d6e6ff;
+  --bg-secondary: #dcdcdc;
+
+  --primary-dark: #1e1e1e;
+  --secondary-dark: #3f3f3f;
+
+  --color-white: #ffffff;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+body {
+  max-width: 1000px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 10px;
+  line-height: normal;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+p {
+  font-weight: 400;
+  line-height: normal;
+}
+
+img {
+  /* display: block; */
+  max-width: 100%;
+  height: auto;
+}
+
+.primary-blue {
+  color: var(--primary-blue);
+}
+
+.bg-primary-blue {
+  background-color: var(--primary-blue);
+}
+
+.border-color-blue{
+    border-color: var(--primary-blue) !important;
+}
+
+.primary-purple {
+  color: var(--primary-purple);
+}
+
+.bg-primary-purple {
+  background-color: var(--primary-purple);
+}
+
+.border-color-purple{
+    border-color: var(--primary-purple) !important;
+}
+
+.bg-gradient-blue{
+    background: linear-gradient(180deg, rgba(35,91,198,1) 50%, rgba(255,255,255,1) 50%);
+}
+
+.bg-gradient-purple{
+    background: linear-gradient(180deg, rgba(210,50,185,1) 50%, rgba(255,255,255,1) 50%);
+}
+
+.col-35 {
+  float: left;
+  width: 35%;
+  margin-top: 6px;
+  padding: 50px;
+}
+
+.col-65 {
+  float: left;
+  width: 65%;
+  margin-top: 6px;
+  padding: 50px 50px 50px 0px;
+}
+
+.row{
+    display: table;
+    width: 100%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-content-between {
+  justify-content: space-between;
+}
+
+.flex-content-center {
+  justify-content: center;
+}
+
+.flex-items-center {
+  align-items: center;
+}
+
+.gap-2 {
+  gap: 2px;
+}
+
+.mr-2 {
+  margin-right: 2px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.mr-10{
+    margin-right: 10px;
+}
+
+.mt-25{
+    margin-top: 25px;
+}
+
+.mt-15{
+    margin-top: 15px;
+}
+
+hr {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 600px) {
+  .col-35,
+  .col-65 {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* Styling Content */
+main {
+  border-radius: 10px;
+  background: var(--color-white);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.font-category-rating {
+  color: var(--secondary-dark);
+  font-size: 18px;
+}
+
+.font-product-description {
+  color: var(--primary-dark);
+  font-size: 20px;
+}
+
+.font-price {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.product-description{
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.rating-circle{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;   
+}
+
+.none-fill{
+    border: 1.5px solid;
+}
+
+.button-group{
+    margin-top: 15px;
+}
+
+.btn{
+    width: 260px;
+    height: 42px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+}
+
+.btn-primary-purple{
+    background-color: var(--primary-purple);
+    color: var(--color-white);
+}
+
+.btn-primary-outline-purple{
+    background-color: var(--color-white);
+    border: 3px solid var(--primary-purple);
+    color: var(--primary-purple);
+}
+
+.btn-primary-purple:hover,
+.btn-primary-purple:focus{
+    background-color: var(--primary-purple-inactive);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.btn-primary-purple:hover {
+   transform: translateY(-1px);
+}
+
+.btn-primary-purple:active {
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}
+
+.btn-primary-outline-purple:hover,
+.btn-primary-outline-purple:focus{
+    background-color: var(--primary-purple-inactive);
+    border-color: var(--primary-purple-inactive);
+    color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.btn-primary-outline-purple:hover {
+   transform: translateY(-1px);
+}
+
+.btn-primary-outline-purple:active {
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}
