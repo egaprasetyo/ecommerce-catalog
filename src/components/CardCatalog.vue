@@ -38,12 +38,10 @@
                 }
             },
             nextProduct(){
-                console.log('Next Product Clicked');
                 this.currentProductId++
                 if(this.currentProductId > 20){
                     this.currentProductId = 1
                 }
-                console.log('Fetching data for product ID:', this.currentProductId);
                 this.fetchData(this.currentProductId);
                 event.stopPropagation();
             }
