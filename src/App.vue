@@ -1,11 +1,9 @@
 <script setup>
-
+import CardCatalog from './components/CardCatalog.vue'
 </script>
 
 <template>
-  <main>
-    
-  </main>
+    <CardCatalog/>
 </template>
 
 <style scoped>

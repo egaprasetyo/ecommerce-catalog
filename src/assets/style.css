@@ -3,6 +3,7 @@
   --primary-blue: #002772;
   --primary-purple: #720060;
   --primary-purple-inactive: #a04092;
+  --primary-blue-inactive: #3060b9;
   --bg-pink: #fde2ff;
   --bg-blue: #d6e6ff;
   --bg-secondary: #dcdcdc;
@@ -32,15 +33,13 @@ li {
 
 body {
   font-family: "Inter";
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.6;
 }
 
-body {
-  max-width: 1000px;
+.wrapper {
   min-height: 100vh;
-  margin: auto;
-  padding: 20px;
+  padding: 50px;
 }
 
 h1,
@@ -98,6 +97,10 @@ img {
     background: linear-gradient(180deg, rgba(210,50,185,1) 50%, rgba(255,255,255,1) 50%);
 }
 
+.bg-gradient-gray{
+    background: linear-gradient(180deg, rgba(229,229,229,1) 50%, rgba(255,255,255,1) 50%);
+}
+
 .col-35 {
   float: left;
   width: 35%;
@@ -139,6 +142,14 @@ img {
   align-items: center;
 }
 
+.flex-row{
+  flex-direction: row;
+}
+
+.flex-column{
+  flex-direction: column;
+}
+
 .gap-2 {
   gap: 2px;
 }
@@ -163,6 +174,10 @@ img {
     margin-top: 15px;
 }
 
+.mb-15{
+  margin-bottom: 15px;
+}
+
 hr {
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -177,6 +192,7 @@ hr {
 
 /* Styling Content */
 main {
+  max-width: 1000px;
   border-radius: 10px;
   background: var(--color-white);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -218,65 +234,3 @@ main {
     margin-top: 15px;
 }
 
-.btn{
-    width: 260px;
-    height: 42px;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    text-decoration: none;
-    transition: all 250ms;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: baseline;
-    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-}
-
-.btn-primary-purple{
-    background-color: var(--primary-purple);
-    color: var(--color-white);
-}
-
-.btn-primary-outline-purple{
-    background-color: var(--color-white);
-    border: 3px solid var(--primary-purple);
-    color: var(--primary-purple);
-}
-
-.btn-primary-purple:hover,
-.btn-primary-purple:focus{
-    background-color: var(--primary-purple-inactive);
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-}
-
-.btn-primary-purple:hover {
-   transform: translateY(-1px);
-}
-
-.btn-primary-purple:active {
-    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
-    transform: translateY(0);
-}
-
-.btn-primary-outline-purple:hover,
-.btn-primary-outline-purple:focus{
-    background-color: var(--primary-purple-inactive);
-    border-color: var(--primary-purple-inactive);
-    color: #ffffff;
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-}
-
-.btn-primary-outline-purple:hover {
-   transform: translateY(-1px);
-}
-
-.btn-primary-outline-purple:active {
-    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
-    transform: translateY(0);
-}
