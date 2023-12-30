@@ -45,5 +45,16 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
+    @media screen and (max-width: 600px) {
+        p{
+            text-align: center;
+        }
+        .wrapper-page-not-found{
+            min-width: 100%;
+            min-height: 400px;
+        }
+
+    }
     
 </style>

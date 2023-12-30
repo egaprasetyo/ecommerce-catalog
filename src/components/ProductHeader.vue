@@ -45,5 +45,19 @@
     </div>
 </template>
 
-<style>
+<style scoped>
+    .font-category-rating {
+        color: var(--secondary-dark);
+        font-size: 18px;
+    }
+
+    .rating-circle{
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;   
+    }
+
+    .none-fill{
+        border: 1.5px solid;
+    }
 </style>

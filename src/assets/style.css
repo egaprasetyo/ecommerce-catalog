@@ -4,13 +4,13 @@
   --primary-purple: #720060;
   --primary-purple-inactive: #a04092;
   --primary-blue-inactive: #3060b9;
+  --blue-loader: #5f94f7;
+  --purple-loader: #ffa1f1;
   --bg-pink: #fde2ff;
   --bg-blue: #d6e6ff;
   --bg-secondary: #dcdcdc;
-
   --primary-dark: #1e1e1e;
   --secondary-dark: #3f3f3f;
-
   --color-white: #ffffff;
 }
 
@@ -37,11 +37,6 @@ body {
   line-height: 1.6;
 }
 
-.wrapper {
-  min-height: 100vh;
-  padding: 50px;
-}
-
 h1,
 h2,
 h3 {
@@ -60,7 +55,7 @@ p {
 }
 
 img {
-  /* display: block; */
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -101,23 +96,22 @@ img {
     background: linear-gradient(180deg, rgba(229,229,229,1) 50%, rgba(255,255,255,1) 50%);
 }
 
-.col-35 {
+.col-40 {
   float: left;
-  width: 35%;
+  width: 40%;
   margin-top: 6px;
   padding: 50px;
 }
 
-.col-65 {
+.col-60 {
   float: left;
-  width: 65%;
+  width: 60%;
   margin-top: 6px;
   padding: 50px 50px 50px 0px;
 }
 
 .row{
-    display: table;
-    width: 100%;
+  width: 100%;
 }
 
 .row:after {
@@ -148,6 +142,14 @@ img {
 
 .flex-column{
   flex-direction: column;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.flex-nowrap{
+  flex-wrap: nowrap;
 }
 
 .gap-2 {
@@ -183,54 +185,33 @@ hr {
 }
 
 @media screen and (max-width: 600px) {
-  .col-35,
-  .col-65 {
+  .row{
+    flex-direction: column;
+  }
+
+  .col-40,
+  .col-60 {
     width: 100%;
     margin-top: 0;
   }
+
+  .col-60{
+    padding: 30px;
+  }
 }
 
-/* Styling Content */
-main {
-  max-width: 1000px;
-  border-radius: 10px;
-  background: var(--color-white);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .row{
+    flex-direction: column;
+  }
+  
+  .col-40,
+  .col-60 {
+    width: 50%;
+    margin-top: 0;
+  }
 
-.font-category-rating {
-  color: var(--secondary-dark);
-  font-size: 18px;
+  .col-60{
+    padding: 30px;
+  }
 }
-
-.font-product-description {
-  color: var(--primary-dark);
-  font-size: 20px;
-}
-
-.font-price {
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
-.product-description{
-    padding-top: 20px;
-    padding-bottom: 50px;
-}
-
-.rating-circle{
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;   
-}
-
-.none-fill{
-    border: 1.5px solid;
-}
-
-.button-group{
-    margin-top: 15px;
-}
-

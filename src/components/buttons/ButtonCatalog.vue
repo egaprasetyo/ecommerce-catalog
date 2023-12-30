@@ -152,4 +152,12 @@
         box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
         transform: translateY(-1px);
     }
+
+    @media only screen and (max-width: 600px) {
+        .btn-large {
+            font-size: 14px;
+            width: 250px;
+        }
+    }
+
 </style>
